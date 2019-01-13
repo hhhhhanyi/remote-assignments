@@ -1,0 +1,19 @@
+* {
+	box-sizing: border-box;
+}
+
+.header {
+  background-color: #EEEEEE;
+}
+
+.welcome {
+  background-color: #CCDDEE;
+ }
+ 
+ .item {
+  background-color: #8899AA;
+ }
+ 
+ .botton {
+  background-color: #DDEEFE;
+ }
