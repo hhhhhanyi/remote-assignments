@@ -45,6 +45,7 @@ img {
 
 .nav li {
   padding-right: 2em;
+	width: 100%;
 }
 
 .banner {
@@ -80,10 +81,6 @@ img {
 
 .nav , .banner , .footer{
   display: flex;
-}
-
-.nav {
-	width: 100%;
 }
 
 .container {
