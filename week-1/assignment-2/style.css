@@ -74,12 +74,6 @@ img {
   padding: 10px;
 }
 
-
-
-.nav {
-  display: inline-flex;
-}
-
 .banner , .footer{
   display: flex;
 }
