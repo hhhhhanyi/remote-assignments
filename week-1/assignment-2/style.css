@@ -41,9 +41,13 @@ img {
   padding: 20px;
 }
 
-.nav li {
+.navbar a{
   padding-right: 2em;
-  width: 100%;
+  width: 110%;
+}
+
+.navbtn{
+  display: none;
 }
 
 .banner {
@@ -103,14 +107,27 @@ img {
   }
 }
 
-
 @media (max-width: 800px) {
-  img {
-    display: flex;
-  }
-  .navbar{
-    display: none;
-  }
+
+.navbtn{
+  display: flex;
+}
+
+.navbar {
+  display: none;
+  position: absolute;
+  top: 40px;
+}
+
+.navbar a {
+  display: block;
+  text-align: left;
+}
+
+.nav:hover .navbar {
+  display: block;
+}
+
 }
 
 @media (min-width: 800px) {
