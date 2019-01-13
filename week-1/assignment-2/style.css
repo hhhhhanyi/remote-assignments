@@ -35,7 +35,7 @@ img {
   display: none;
 }
 
-.header {
+.main-header {
   background-color: #EEEEEE;
   height: 50px;
   padding: 20px;
@@ -45,7 +45,7 @@ img {
 
 .nav li {
   padding-right: 2em;
-	width: 100%;
+  width: 100%;
 }
 
 .banner {
@@ -93,7 +93,7 @@ img {
   flex: 1 40%;
 }
 
-.header {
+.main-header {
   display: flex;
   flex-direction: row;
   align-items: center;
