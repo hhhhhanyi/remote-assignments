@@ -41,8 +41,11 @@ img {
   padding: 20px;
 }
 
+
+
 .nav li {
   padding-right: 2em;
+  width: 100%;
 }
 
 .banner {
@@ -73,6 +76,8 @@ img {
   background-color: #DDEEFE;
   padding: 10px;
 }
+
+
 
 .nav , .banner , .footer{
   display: flex;
