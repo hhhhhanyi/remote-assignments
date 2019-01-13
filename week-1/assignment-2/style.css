@@ -31,10 +31,6 @@ h3 {
   text-align: center;
 }
 
-img {
-  display: none;
-}
-
 .main-header {
   background-color: #EEEEEE;
   height: 50px;
@@ -117,6 +113,7 @@ img {
   display: none;
   position: absolute;
   top: 40px;
+  right: 0;
 }
 
 .navbar a {
