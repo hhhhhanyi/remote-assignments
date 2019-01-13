@@ -35,7 +35,7 @@ img {
   display: none;
 }
 
-.main-header {
+.header {
   background-color: #EEEEEE;
   height: 50px;
   padding: 20px;
@@ -96,7 +96,7 @@ img {
   flex: 1 40%;
 }
 
-.main-header {
+.header {
   display: flex;
   flex-direction: row;
   align-items: center;
