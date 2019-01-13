@@ -43,7 +43,6 @@ img {
 
 .nav li {
   padding-right: 2em;
-  width: 100%;
 }
 
 .banner {
@@ -78,8 +77,7 @@ img {
 
 
 .nav {
-  display: flex;
-  width: 100%;
+  display: inline-flex;
 }
 
 .banner , .footer{
