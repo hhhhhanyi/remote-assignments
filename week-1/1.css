@@ -29,3 +29,9 @@ h1 {
   background-color: #DDEEFE;
  }
 
+
+.container {
+  display: flex;
+}
+
+
