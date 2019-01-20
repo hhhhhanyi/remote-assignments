@@ -1,15 +1,15 @@
 /* Assignment 1: Function and Array */
 function max(...numbers){
-  let max = 0;
   return numbers.reduce((prev, cur) => {
     if ( cur > prev ){
-      max = cur;
+        return cur;
+    } else {
+      return prev;
     }
-    return max;
   });
 }
 
-document.write("<h1>Assignment 1: Function and Array</h1>max(1, 2, 4, 5) = " +  max(1, 2, 4, 5) + "<br>max(5, 2, 7, 1, 6) = " + max(5, 2, 7, 1, 6));
+document.write("<h1>Assignment 1: Function and Array</h1>max(-1, -2, -4, -5) = " +  max(-1, -2, -4, -5) + "<br>max(5, 2, 7, 1, 6) = " + max(5, 2, 7, 1, 6));
 
 
 /* Assignment 2: Object */
