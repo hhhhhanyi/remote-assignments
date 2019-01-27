@@ -1,0 +1,10 @@
+doctype html
+html(lang="en")
+	head
+		title="week3"
+	body
+		h1 hi! #{name}
+			form(action='/myName', method='post')
+				label Please enter your name:
+					input(type='text', name='username')
+				button(type='submit') Submit
