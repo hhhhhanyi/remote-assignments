@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>week3</title>
+  </head>
+  <body>
+    <form>
+      <label>Number: </label>
+      <input id='input' ></input>
+      <button type='submit' onclick="calculate()">Submit</button>
+    </form>
+    <p id="demo"></p>
+    <script>
+      function calculate() {
+          var xhr = new XMLHttpRequest();
+          xhr.onreadystatechange = function() {
+              if (xhr.readyState === 4 && xhr.status === 200) {
+                  document.getElementById("demo").innerHTML = xhr.responseText;
+              }
+          };
+          var url = "/getData?number=" + document.getElementById('input').value;
+          xhr.open("GET", url, true);
+          xhr.send();
+
+      }
+    </script>
+  </body>
+</html>
