@@ -43,18 +43,6 @@ app.get('/createtable', (req,res) =>{
   })
 });
 
-// insert post
-app.get('/add',(req,res)=>{
-  let post = {email:'hhh@gmail', password:'aaaa'};
-  let sql = 'INSERT INTO user SET ?';
-  let query = db.query(sql, post, (err,result)=>{
-    if(err) throw err;
-    console.log(result);
-    res.send('user added.....');
-  })
-});
-
-
 //select Posts
 app.get('/get', (req,res)=>{
   let sql = 'SELECT * from user';
@@ -69,11 +57,9 @@ app.get('/home', (req,res)=>{
   res.render('home');
 });
 
-app.post('/home', (req,res)=>{
+app.post('/form1', (req,res)=>{
   const email = req.body.si_email;
   const password = req.body.si_password;
-  const email_su = req.body.su_email;
-  const password_su = req.body.su_password;
   const err = "";
 
   let si_sql = `SELECT * from user WHERE email = '${email}'`;
@@ -93,14 +79,19 @@ app.post('/home', (req,res)=>{
       }
     }
   });
-  
+});
+
+app.post('/form2', (req,res)=>{
+  const email_su = req.body.su_email;
+  const password_su = req.body.su_password;
+
   let su_sql = `SELECT * from user WHERE email = '${email_su}'`;
   let su_query = db.query(su_sql, (err,result)=>{
     if(err) throw err;
     if (result.length == 0){
       let post = {email:email_su, password:password_su};
-      let sql = 'INSERT INTO user SET ?
-      
+      let sql = 'INSERT INTO user SET ?';
+
       let query = db.query(sql, post, (err,result)=>{
         if(err) throw err;
         console.log(result);
@@ -119,7 +110,7 @@ app.get('/member', (req,res)=>{
 
 
 /* 下載SQL
-mysqldump -u root -p b0341009 --all-databases > nodemysql.sql
+mysqldump -u root -p b0341009 --all-databases > assignment.sql
 */
 
 app.listen('3000', ()=>{
