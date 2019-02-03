@@ -31,7 +31,7 @@ Complete the function below to make AJAX call to an URL by GET method,
     xhr.onreadystatechange = function () {
       if(xhr.readyState === 4 && xhr.status === 200) {
         var data = JSON.parse(xhr.responseText);
-        render(data);
+        callback(data);
       }
     };
     xhr.send();
